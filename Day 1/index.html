@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>テスト</title>
+</head>
+<body>
+<h1 style="text-align: center;">テストするです</h1>
+</body>
+
+<script type="text/javascript">
+	
+	// take input as alert box
+	
+	input = prompt("Say something")
+	console.log(input)
+
+
+
+
+	// All promt inputs are string
+
+	Userinput = prompt("Give any input")
+	console.log("Input is = " + typeof Userinput)
+
+
+
+
+	// If you use "+"" operator bettwen 2 input value, the operator will act as sting summation
+
+	ValueOne = prompt("Give first value")
+	console.log("ValueOne datatype is = " + typeof ValueOne)
+	ValueTwo = prompt("Give scond value")
+	console.log("ValueTwo datatype is = " + typeof ValueTwo)
+	sum = ValueOne + ValueTwo
+	console.log("sum datatype is = " + typeof sum)
+	console.log(sum)
+
+
+
+
+	// if you want to use "+" operator bettwen inputs you need to convert them into number datatype
+
+	ValueOne = prompt("Give first value")
+	console.log("ValueOne datatype is = " + typeof ValueOne)
+	ValueOne = Number(ValueOne) // type convertion 1
+	console.log("after type convertion ValueOne datatype is = " + typeof ValueOne)
+
+	ValueTwo = Number(prompt("Give scond value")) // type convertion 2
+	console.log("after type convertion ValueTwo datatype is = " + typeof ValueTwo)
+
+	sum = ValueOne + ValueTwo
+	console.log("sum datatype is = " + typeof sum)
+	console.log(sum)
+
+</script>
+</html>	
