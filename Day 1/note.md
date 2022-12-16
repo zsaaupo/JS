@@ -1,4 +1,4 @@
 * prommt() input
-* typeconvertion
+* type convertion
 * operator
 * output
