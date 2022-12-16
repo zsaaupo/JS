@@ -22,6 +22,11 @@ console.log(Math.floor(9.5))
 console.log(Math.floor(9.1))
 
 
+// random
+
+console.log(Math.random()) // print any number between 0 to 1
+console.log(Math.random() * 7) // print any number between 0 to 7
+console.log(Math.floor(Math.random() * 4)) // it will print "0 or 1 or 2 or 3" but not 4
 
 
 // var, let & const
