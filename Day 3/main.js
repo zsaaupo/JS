@@ -48,3 +48,41 @@ console.log(textOne.concat(" ", textTwo, " ", textOne))
 
 console.log(`say ${textOne} to ${textTwo}`) // use vaiable inside string
 console.log(`This is a random number ${valueOne} but Datatype is string`)
+
+
+
+
+// Function
+
+
+// detailed comment
+// This is a function called 'randomNumber'
+// and it has 1 argument called 'rangeNumber'
+// dose : it logs out a random integer number between 0 to GivenArgument-1 to console
+
+function randomNumber(rangeNumber){
+
+	let number = Number((Math.random() * rangeNumber).toFixed())
+	console.log(`${number} is a random number between 0 to ${rangeNumber} and Datatype is ` + typeof number)
+}
+
+// calling function
+randomNumber(2)
+randomNumber(5)
+randomNumber(10)
+randomNumber(20)
+
+
+// This is a function called 'randomInteger'
+// and it has 1 argument called 'numberRange'
+// dose : it returns a random integet value
+function randomInteger(numberRange){
+
+	let randomNumber = Number((Math.random() * numberRange).toFixed())
+	return randomNumber
+}
+
+// taking value
+console.log(randomInteger(7))
+randomValue = randomInteger(10)
+console.log(`${randomValue} datatype is ${typeof randomValue}`)
