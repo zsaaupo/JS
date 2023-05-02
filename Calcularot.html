@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calcularon</title>
+</head>
+<body>
+<script>
+	let a = Number(prompt())
+	let b = Number(prompt())
+	let c = prompt("give a operator")
+
+	function add(a,b) {
+		return a + b
+	}
+	function sub(a,b) {
+		return a - b
+	}
+	function mul(a,b) {
+		return a * b
+	}
+	function div(a,b) {
+		return a / b
+	}
+
+	function calculator(a, b, operator){
+		return operator(a, b)
+	}
+
+	if(c == "+"){
+		console.log(calculator(a, b, add))
+	}
+	if(c == "-"){
+		console.log(calculator(a, b, sub))
+	}
+	if(c == "*"){
+		console.log(calculator(a, b, mul))
+	}
+	if(c == "/"){
+		console.log(calculator(a, b, div))
+	}
+	else{
+		console.log("somthing is wrong")
+	}
+</script>
+</body>
+</html>
